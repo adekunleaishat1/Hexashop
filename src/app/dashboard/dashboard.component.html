@@ -11,26 +11,27 @@
     </div>
     <div class="hidden md:block">
       <ul class="flex items-center gap-2">
-        <li class="p-4 font-medium text-sm">HOME</li>
-        <li class="p-4 font-medium text-sm">MEN</li>
-        <li class="p-4 font-medium text-sm">WOMEN</li>
-        <li class="p-4 font-medium text-sm">KIDS</li>
-        <li class="p-4 font-medium text-sm">EXPLORE</li>
+        <li class="p-4 font-medium text-sm w-full">HOME</li>
+        <li class="p-4 font-medium text-sm w-full">MEN'S</li>
+        <li class="p-4 font-medium text-sm w-full">WOMEN'S</li>
+        <li class="p-4 font-medium text-sm w-full">KID'S</li>
+        <li class="p-4 font-medium text-sm w-full">EXPLORE</li>
       </ul>
     </div>
     <div class="hidden md:block">
       <button class="border py-2 px-6 rounded-md">Login</button>
     </div>
-    <div  (click)="show()" class="">
-        <mat-icon *ngIf="toggle" class="w-full" aria-hidden="false" aria-label="Example home icon"  fontIcon="menu"></mat-icon>
-        <mat-icon *ngIf="!toggle" class="w-full" aria-hidden="false" aria-label="Example home icon" fontIcon="close"></mat-icon>
+    <div  (click)="show()" class="block md:hidden">
+        <mat-icon *ngIf="!toggle" class="w-full" aria-hidden="false" aria-label="Example home icon"  fontIcon="menu"></mat-icon>
+        <mat-icon *ngIf="toggle" class="w-full" aria-hidden="false" aria-label="Example home icon" fontIcon="close"></mat-icon>
     </div>
-    <div  *ngIf="!toggle" class="fixed left-0 top-0 w-[50%] h-full  border-r border-r-black bg-white ease-in-out duration-500">
-        <ul class="pt-7">
+    <div  [ngClass]="toggle? 'fixed left-0 top-0 w-[50%] h-full bg-white ease-in-out duration-500' : 'fixed left-[-100%]' " >
+        <img class="p-4" src="assets/logo.png" alt="">
+        <ul class="p-4">
         <li class="p-4 font-medium text-sm">HOME</li>
-        <li class="p-4 font-medium text-sm">MEN</li>
-        <li class="p-4 font-medium text-sm">WOMEN</li>
-        <li class="p-4 font-medium text-sm">KIDS</li>
+        <li class="p-4 font-medium text-sm">MEN'S</li>
+        <li class="p-4 font-medium text-sm">WOMEN'S</li>
+        <li class="p-4 font-medium text-sm">KID'S</li>
         <li class="p-4 font-medium text-sm">EXPLORE</li> 
         </ul>
     </div>
