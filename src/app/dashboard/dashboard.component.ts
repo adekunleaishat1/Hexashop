@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent {
+  public toggle:boolean = true
 
+  show () {
+    this.toggle = !this.toggle
+  }
 }

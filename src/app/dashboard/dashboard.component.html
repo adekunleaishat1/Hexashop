@@ -1,3 +1,38 @@
-<div>
-    
+<div class="pb-8 broken-border-bottom">
+  <div
+    class="flex items-center justify-between w-full max-w-[1100px] pt-8 h-16 px-3 mx-auto"
+  >
+    <div>
+        <img src="assets/logo.png" alt="">
+      <!-- <div>
+        <h1 class="w-full text-xl font-bold text-black">HEXASHOP</h1>
+        <p class="w-full text-xs text-gray-500">ONLINE SHOPPING</p>
+      </div> -->
+    </div>
+    <div class="hidden md:block">
+      <ul class="flex items-center gap-2">
+        <li class="p-4 font-medium text-sm">HOME</li>
+        <li class="p-4 font-medium text-sm">MEN</li>
+        <li class="p-4 font-medium text-sm">WOMEN</li>
+        <li class="p-4 font-medium text-sm">KIDS</li>
+        <li class="p-4 font-medium text-sm">EXPLORE</li>
+      </ul>
+    </div>
+    <div class="hidden md:block">
+      <button class="border py-2 px-6 rounded-md">Login</button>
+    </div>
+    <div  (click)="show()" class="">
+        <mat-icon *ngIf="toggle" class="w-full" aria-hidden="false" aria-label="Example home icon"  fontIcon="menu"></mat-icon>
+        <mat-icon *ngIf="!toggle" class="w-full" aria-hidden="false" aria-label="Example home icon" fontIcon="close"></mat-icon>
+    </div>
+    <div  *ngIf="!toggle" class="fixed left-0 top-0 w-[50%] h-full  border-r border-r-black bg-white ease-in-out duration-500">
+        <ul class="pt-7">
+        <li class="p-4 font-medium text-sm">HOME</li>
+        <li class="p-4 font-medium text-sm">MEN</li>
+        <li class="p-4 font-medium text-sm">WOMEN</li>
+        <li class="p-4 font-medium text-sm">KIDS</li>
+        <li class="p-4 font-medium text-sm">EXPLORE</li> 
+        </ul>
+    </div>
+  </div>
 </div>
