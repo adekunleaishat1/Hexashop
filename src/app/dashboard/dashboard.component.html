@@ -3,7 +3,7 @@
     class="flex items-center justify-between w-full max-w-[1100px] pt-8 h-16 px-3 mx-auto"
   >
     <div>
-        <img src="assets/logo.png" alt="">
+      <img src="assets/logo.png" alt="" />
       <!-- <div>
         <h1 class="w-full text-xl font-bold text-black">HEXASHOP</h1>
         <p class="w-full text-xs text-gray-500">ONLINE SHOPPING</p>
@@ -21,19 +21,179 @@
     <div class="hidden md:block">
       <button class="border py-2 px-6 rounded-md">Login</button>
     </div>
-    <div  (click)="show()" class="block md:hidden">
-        <mat-icon *ngIf="!toggle" class="w-full" aria-hidden="false" aria-label="Example home icon"  fontIcon="menu"></mat-icon>
-        <mat-icon *ngIf="toggle" class="w-full" aria-hidden="false" aria-label="Example home icon" fontIcon="close"></mat-icon>
+    <div (click)="show()" class="block md:hidden">
+      <mat-icon
+        *ngIf="!toggle"
+        class="w-full"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="menu"
+      ></mat-icon>
+      <mat-icon
+        *ngIf="toggle"
+        class="w-full"
+        aria-hidden="false"
+        aria-label="Example home icon"
+        fontIcon="close"
+      ></mat-icon>
     </div>
-    <div  [ngClass]="toggle? 'fixed left-0 top-0 w-[50%] h-full bg-white ease-in-out duration-500' : 'fixed left-[-100%]' " >
-        <img class="p-4" src="assets/logo.png" alt="">
-        <ul class="p-4">
+    <div
+      [ngClass]="
+        toggle
+          ? 'fixed left-0 top-0 w-[50%] h-full bg-white ease-in-out duration-500'
+          : 'fixed left-[-100%]'
+      "
+    >
+      <img class="p-4" src="assets/logo.png" alt="" />
+      <ul class="p-4">
         <li class="p-4 font-medium text-sm">HOME</li>
         <li class="p-4 font-medium text-sm">MEN'S</li>
         <li class="p-4 font-medium text-sm">WOMEN'S</li>
         <li class="p-4 font-medium text-sm">KID'S</li>
-        <li class="p-4 font-medium text-sm">EXPLORE</li> 
-        </ul>
+        <li class="p-4 font-medium text-sm">EXPLORE</li>
+      </ul>
     </div>
   </div>
+</div>
+<div class="w-full py-16 px-5  broken-border-bottom">
+  <div class="max-w-[1700px] mx-auto gap-4 grid md:grid-cols-2 md:gap-6 h-[650px]">
+    <diV class="pr-3 flex items-center justify-center h-[650px] relative">
+      <img
+        class="object-cover w-full h-full"
+        src="assets/left-banner-image.jpg"
+        alt=""
+      />
+      <div class="absolute z-50 px-6 py-4 left-12 top-50">
+        <h1 class="font-bold text-5xl text-white tracking-wider">
+          We Are Hexashop
+        </h1>
+        <p class="text-white pt-6">Awesome, clean & creative HTML5 Template</p>
+        <button class="border mt-6 py-3 px-7 text-sm text-white">Purchase Now!</button>
+      </div>
+    </diV>
+    <div class="grid grid-cols-1 md:grid-cols-2  gap-7 pl-4 h-[650px]">
+     <div class="relative group">
+      <img
+      class="object-cover w-full h-full"
+      src="assets/baner-right-image-01.jpg"
+      alt=""
+      />
+      <div class="absolute w-[250px] px-2 py-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <h1 class="text-white font-bold text-center text-3xl tracking-wider">Women</h1>
+      <p class="text-white text-center text-lg mt-4">Best Clothes For Women</p>
+      </div>
+      <div class="w-full h-[280px]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+       <div class="max-w-[330px] h-full bg-black mx-auto py-9">
+        <h1 class="text-white font-bold text-center text-3xl tracking-wider">Women</h1> 
+        <p class="text-white mt-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa labore</p>
+        <button class="border mt-6 py-3 px-7 text-sm text-white mx-auto block">Discover More</button>
+       </div>
+      </div>
+     </div>
+      <div class="relative group">
+        <img
+        class="object-cover w-full h-full"
+        src="assets/baner-right-image-02.jpg"
+        alt=""
+        />
+       <div class="absolute w-[250px] px-2 py-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        <h1 class="text-white font-bold text-center text-3xl tracking-wider">Men</h1>
+        <p class="text-white text-center text-lg mt-4">Best Clothes For Men</p>
+        </div>
+        <div class="w-full h-[280px]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+          <div class="max-w-[330px] h-full bg-black mx-auto py-9">
+           <h1 class="text-white font-bold text-center text-3xl tracking-wider">Men</h1> 
+           <p class="text-white mt-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa labore</p>
+           <button class="border mt-6 py-3 px-7 text-sm text-white mx-auto block">Discover More</button>
+          </div>
+         </div>
+      </div>
+     <div class="relative group">
+      <img
+      class="object-cover w-full h-full"
+      src="assets/baner-right-image-03.jpg"
+      alt=""
+       />
+      <div class="absolute w-[250px] px-2 py-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <h1 class="text-white font-bold text-center text-3xl tracking-wider">Kids</h1>
+      <p class="text-white text-center text-lg mt-4">Best Clothes For Kids</p>
+      </div>
+      <div class="w-full h-[280px]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <div class="max-w-[330px] h-full bg-black mx-auto py-9">
+         <h1 class="text-white font-bold text-center text-3xl tracking-wider">Kids</h1> 
+         <p class="text-white mt-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa labore</p>
+         <button class="border mt-6 py-3 px-7 text-sm text-white mx-auto block">Discover More</button>
+        </div>
+       </div>
+     </div>
+     <div class="relative group">
+      <img
+      class="object-cover w-full h-full"
+      src="assets/baner-right-image-04.jpg"
+      alt=""
+       />
+      <div class="absolute w-[250px] px-2 py-4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+      <h1 class="text-white font-bold text-center text-3xl tracking-wider">Accessories</h1>
+      <p class="text-white text-center text-lg mt-4">Best Trend Accessories</p>
+      </div>
+      <div class="w-full h-[280px]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+        <div class="max-w-[330px] h-full bg-black mx-auto py-9">
+         <h1 class="text-white font-bold text-center text-3xl tracking-wider">Accessories</h1> 
+         <p class="text-white mt-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa labore</p>
+         <button class="border mt-6 py-3 px-7 text-sm text-white mx-auto block">Discover More</button>
+        </div>
+       </div>
+     </div>
+    </div>
+  </div>
+</div>
+<div class="w-full py-20 px-6 broken-border-bottom">
+   <div class="max-w-[1200px]  mx-auto">
+       <div>
+          <h1 class="text-4xl font-bold tracking-widest">Men's Latest</h1>
+          <p class="text-gray-400">Details to details is what makes Hexashop different from the other themes.</p>
+       </div>
+       <!-- <div class="mt-5 w-full grid">
+         <div class=" max-w-[400px] h-[400px] border">
+          <img class="object-cover w-full h-full" src="assets/men-01.jpg" alt="">
+          <div class="w-full pt-5 flex text-center justify-between border">
+           <div>
+            <h1 class="font-bold text-2xl">Classic spring</h1>
+            <p class="text-gray-400 text-xl text-left">$120.00</p>
+           </div>
+           <div>
+            <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
+            <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
+            <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
+            <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
+            <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
+           </div>
+          </div>
+         </div>
+       </div> -->
+       <div class="mt-5 flex justify-between items-center border">
+          <ngx-slick-carousel class="carousel" 
+                        #slickModal="slick-carousel" 
+                        [config]="slideConfig" >
+              <div *ngFor="let slide of slides" ngxSlickItem class="slide">
+               <div class=" max-w-[400px] h-[400px] border">
+                <img class="object-cover w-full h-full" [src]="slide.img" alt="">
+                <div class="w-full pt-5 flex text-center justify-between border">
+                 <div>
+                  <h1 class="font-bold text-2xl">{{slide.title}}</h1>
+                  <p class="text-gray-400 text-xl text-left">{{slide.price}}</p>
+                 </div>
+                 <div>
+                  <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
+                  <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
+                  <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
+                  <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
+                  <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
+                 </div>
+                </div>
+             </div> 
+            </div>    
+          </ngx-slick-carousel>
+      </div>
+   </div>
 </div>
