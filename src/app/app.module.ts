@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './materials/material/material.module';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
+
 
 
 @NgModule({
@@ -19,9 +19,8 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule,
-    SlickCarouselModule
-    
+    MaterialModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

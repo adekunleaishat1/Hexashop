@@ -4,10 +4,6 @@
   >
     <div>
       <img src="assets/logo.png" alt="" />
-      <!-- <div>
-        <h1 class="w-full text-xl font-bold text-black">HEXASHOP</h1>
-        <p class="w-full text-xs text-gray-500">ONLINE SHOPPING</p>
-      </div> -->
     </div>
     <div class="hidden md:block">
       <ul class="flex items-center gap-2">
@@ -84,7 +80,7 @@
       </div>
       <div class="w-full h-[280px]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
        <div class="max-w-[330px] h-full bg-black mx-auto py-9">
-        <h1 class="text-white font-bold text-center text-3xl tracking-wider">Women</h1> 
+        <h1 class="text-white font-bold text-center text-3xl tracking-wider">Women</h1>
         <p class="text-white mt-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa labore</p>
         <button class="border mt-6 py-3 px-7 text-sm text-white mx-auto block">Discover More</button>
        </div>
@@ -102,7 +98,7 @@
         </div>
         <div class="w-full h-[280px]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
           <div class="max-w-[330px] h-full bg-black mx-auto py-9">
-           <h1 class="text-white font-bold text-center text-3xl tracking-wider">Men</h1> 
+           <h1 class="text-white font-bold text-center text-3xl tracking-wider">Men</h1>
            <p class="text-white mt-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa labore</p>
            <button class="border mt-6 py-3 px-7 text-sm text-white mx-auto block">Discover More</button>
           </div>
@@ -120,7 +116,7 @@
       </div>
       <div class="w-full h-[280px]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
         <div class="max-w-[330px] h-full bg-black mx-auto py-9">
-         <h1 class="text-white font-bold text-center text-3xl tracking-wider">Kids</h1> 
+         <h1 class="text-white font-bold text-center text-3xl tracking-wider">Kids</h1>
          <p class="text-white mt-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa labore</p>
          <button class="border mt-6 py-3 px-7 text-sm text-white mx-auto block">Discover More</button>
         </div>
@@ -138,7 +134,7 @@
       </div>
       <div class="w-full h-[280px]  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
         <div class="max-w-[330px] h-full bg-black mx-auto py-9">
-         <h1 class="text-white font-bold text-center text-3xl tracking-wider">Accessories</h1> 
+         <h1 class="text-white font-bold text-center text-3xl tracking-wider">Accessories</h1>
          <p class="text-white mt-3 text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa labore</p>
          <button class="border mt-6 py-3 px-7 text-sm text-white mx-auto block">Discover More</button>
         </div>
@@ -153,7 +149,7 @@
           <h1 class="text-4xl font-bold tracking-widest">Men's Latest</h1>
           <p class="text-gray-400">Details to details is what makes Hexashop different from the other themes.</p>
        </div>
-       <!-- <div class="mt-5 w-full grid">
+       <div class="mt-5 w-full grid">
          <div class=" max-w-[400px] h-[400px] border">
           <img class="object-cover w-full h-full" src="assets/men-01.jpg" alt="">
           <div class="w-full pt-5 flex text-center justify-between border">
@@ -170,30 +166,7 @@
            </div>
           </div>
          </div>
-       </div> -->
-       <div class="mt-5 flex justify-between items-center border">
-          <ngx-slick-carousel class="carousel" 
-                        #slickModal="slick-carousel" 
-                        [config]="slideConfig" >
-              <div *ngFor="let slide of slides" ngxSlickItem class="slide">
-               <div class=" max-w-[400px] h-[400px] border">
-                <img class="object-cover w-full h-full" [src]="slide.img" alt="">
-                <div class="w-full pt-5 flex text-center justify-between border">
-                 <div>
-                  <h1 class="font-bold text-2xl">{{slide.title}}</h1>
-                  <p class="text-gray-400 text-xl text-left">{{slide.price}}</p>
-                 </div>
-                 <div>
-                  <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
-                  <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
-                  <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
-                  <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
-                  <mat-icon class="text-lg" aria-hidden="false"  fontIcon="star"></mat-icon>
-                 </div>
-                </div>
-             </div> 
-            </div>    
-          </ngx-slick-carousel>
-      </div>
+       </div>
+
    </div>
 </div>
